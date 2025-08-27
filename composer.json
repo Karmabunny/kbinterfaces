@@ -1,0 +1,34 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "karmabunny/interfaces",
+    "description": "Base KB interfaces",
+    "keywords": ["utilities", "karmabunny", "kb", "interfaces"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karmabunny",
+            "email": "info@karmabunny.com.au"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "phpstan/phpstan": "^2.1",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "karmabunny\\interfaces\\": "src/"
+        }
+    },
+    "autoload-dev": {
+    },
+    "scripts": {
+        "publish": "bash scripts/publish.sh",
+        "analyse": "phpstan analyse -c phpstan.neon",
+        "compat": "phpcs -p --standard=phpcs.xml --colors --extensions=php"
+    }
+}
