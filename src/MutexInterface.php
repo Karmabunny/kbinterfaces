@@ -19,10 +19,16 @@ interface MutexInterface
      *
      * Return true if the lock is acquired, false if it is already held.
      *
-     * @param int $timeout
+     * If the timeout is zero, the method always returns immediately
+     * regardless if the lock is acquired or not.
+     *
+     * Given a positive timeout, the method will wait for the previous lock
+     * to release before acquiring or giving up.
+     *
+     * @param float $timeout in seconds
      * @return bool
      */
-    public function acquire(int $timeout = 0): bool;
+    public function acquire(float $timeout = 0): bool;
 
     /**
      * Release the lock.
