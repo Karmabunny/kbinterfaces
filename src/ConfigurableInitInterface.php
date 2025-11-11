@@ -25,5 +25,5 @@ interface ConfigurableInitInterface extends ConfigurableInterface
      *
      * @return void
      */
-    public function init(): void;
+    public function init();
 }

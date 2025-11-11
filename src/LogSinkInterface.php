@@ -23,5 +23,5 @@ interface LogSinkInterface
      * @param int|float|null $_timestamp
      * @return void
      */
-    public function log($message, ?int $level = null, ?string $_category = null, $_timestamp = null): void;
+    public function log($message, ?int $level = null, ?string $_category = null, $_timestamp = null);
 }

@@ -21,6 +21,6 @@ interface ValidatesInterface
      *
      * @return void
      */
-    public function validate(?string $scenario = null): void;
+    public function validate(?string $scenario = null);
 
 }

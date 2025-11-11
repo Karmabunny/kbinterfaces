@@ -32,7 +32,7 @@ interface RuleInterface
      * @param array $ruleset
      * @return void
      */
-    public function parse(array $ruleset): void;
+    public function parse(array $ruleset);
 
 
     /**
@@ -51,5 +51,5 @@ interface RuleInterface
      * @param array|object $data
      * @return void
      */
-    public function validate($data): void;
+    public function validate($data);
 }

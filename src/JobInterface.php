@@ -19,6 +19,6 @@ interface JobInterface
      *
      * @return void
      */
-    public function run(): void;
+    public function run();
 
 }
