@@ -15,6 +15,14 @@ interface JobInterface
 {
 
     /**
+     * A unique identifier.
+     *
+     * @return string
+     */
+    public function getId(): string;
+
+
+    /**
      * Run the job.
      *
      * @return void
