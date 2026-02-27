@@ -19,7 +19,7 @@ interface ValidationExceptionInterface extends Throwable
     /**
      * Get the validation errors.
      *
-     * @return array [ item => [errors] ]
+     * @return array<string,array> [ item => [errors] ]
      */
     public function getErrors(): array;
 }
