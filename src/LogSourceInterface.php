@@ -20,5 +20,5 @@ interface LogSourceInterface
      * @param callable|LogSinkInterface $logger (message, level, category, timestamp)
      * @return int
      */
-    public function addLogger($logger);
+    public function addLogger(callable|LogSinkInterface $logger): int;
 }

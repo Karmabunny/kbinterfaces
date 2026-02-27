@@ -42,5 +42,5 @@ interface SortableInterface
      * @param string $mode
      * @return int
      */
-    public function compare($other, string $mode = 'default'): int;
+    public function compare(mixed $other, string $mode = 'default'): int;
 }
