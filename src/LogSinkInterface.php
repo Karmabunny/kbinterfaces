@@ -18,10 +18,10 @@ interface LogSinkInterface
      * Log something.
      *
      * @param mixed $message string, array, exception - whatever
-     * @param int $level
-     * @param string|null $_category
-     * @param int|float|null $_timestamp
+     * @param int|null $level
+     * @param string|null $category
+     * @param float|null $timestamp
      * @return void
      */
-    public function log($message, ?int $level = null, ?string $_category = null, $_timestamp = null);
+    public function log(mixed $message, ?int $level = null, ?string $category = null, float|null $timestamp = null): void;
 }

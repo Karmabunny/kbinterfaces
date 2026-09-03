@@ -14,7 +14,7 @@ interface JsonDeserializable
      * Create an object from a JSON array.
      *
      * @param array $json
-     * @return self
+     * @return static
      */
-    public static function fromJson(array $json);
+    public static function fromJson(array $json): static;
 }

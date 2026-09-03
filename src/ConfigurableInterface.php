@@ -19,5 +19,5 @@ interface ConfigurableInterface
      * @param iterable $config
      * @return void
      */
-    public function update($config);
+    public function update(iterable $config): void;
 }
